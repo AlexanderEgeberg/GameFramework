@@ -1,0 +1,10 @@
+{
+  "names": 
+  [
+    {"name": "Walker"},
+    {"name": "Lurker"},
+    {"name": "Biter" },
+    {"name": "Roamer" },
+    {"name": "Infected" }
+  ]
+}
