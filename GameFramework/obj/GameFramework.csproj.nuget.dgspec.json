@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexa\\Documents\\GitHub\\4 Semester\\C#\\Game\\GameFramework\\GameFramework.csproj": {}
+    "C:\\Users\\alexa\\Documents\\GitHub\\GameFramework\\GameFramework\\GameFramework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexa\\Documents\\GitHub\\4 Semester\\C#\\Game\\GameFramework\\GameFramework.csproj": {
+    "C:\\Users\\alexa\\Documents\\GitHub\\GameFramework\\GameFramework\\GameFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\Documents\\GitHub\\4 Semester\\C#\\Game\\GameFramework\\GameFramework.csproj",
+        "projectUniqueName": "C:\\Users\\alexa\\Documents\\GitHub\\GameFramework\\GameFramework\\GameFramework.csproj",
         "projectName": "GameFramework",
-        "projectPath": "C:\\Users\\alexa\\Documents\\GitHub\\4 Semester\\C#\\Game\\GameFramework\\GameFramework.csproj",
+        "projectPath": "C:\\Users\\alexa\\Documents\\GitHub\\GameFramework\\GameFramework\\GameFramework.csproj",
         "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\Documents\\GitHub\\4 Semester\\C#\\Game\\GameFramework\\obj\\",
+        "outputPath": "C:\\Users\\alexa\\Documents\\GitHub\\GameFramework\\GameFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",

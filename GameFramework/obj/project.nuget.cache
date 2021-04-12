@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RU2MoChj/rjXD+QyutkOI4kI9HxGlAjb0SC7GOnwrcLRj0CtwBJTVYWeqs0248T7r1OofBDRdgi9nj4viCWkmQ==",
+  "dgSpecHash": "RUOq9OvYy4hYgtr8MWJu95PqOeS/9hDhJh15mu9dFjXnLBk+YM8EYgNtRDr3jqokAiPJqfTH6yEHj8UyGjVBNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alexa\\Documents\\GitHub\\4 Semester\\C#\\Game\\GameFramework\\GameFramework.csproj",
+  "projectFilePath": "C:\\Users\\alexa\\Documents\\GitHub\\GameFramework\\GameFramework\\GameFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alexa\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

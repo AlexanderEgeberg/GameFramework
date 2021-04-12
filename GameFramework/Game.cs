@@ -42,6 +42,11 @@ namespace GameFramework
             _controls = controls;
             AttachObservers(deathObserver);
         }
+
+        //maybe Start() shouldn't be in the framework?
+        //Since it's a framework perhaps the developers using this framework
+        //Should just make their own game logic and use the functions?
+
         //starts the game
         public void Start()
         {
@@ -106,7 +111,7 @@ namespace GameFramework
             Console.WriteLine(_player.HasKey ? "\nYou obtained the key and won!" : "\nYou died and didn't obtain the key so you lost :(");
             TraceWorker.Write(TraceEventType.Stop,3, "Game has ended");
         }
-        private bool GameAction(InputKey move)
+        public bool GameAction(InputKey move)
         {
             //Player moves based on input direction
             _player?.Move(move);
@@ -125,14 +130,14 @@ namespace GameFramework
 
 
         //Generate random position property
-        private void GetRandomPosition(IWorldObject objWorldObject)
+        public void GetRandomPosition(IWorldObject objWorldObject)
         {
             objWorldObject.Position.Row = rnd.Next(_game_world.MaxWidth);
             objWorldObject.Position.Col = rnd.Next(_game_world.MaxHeight);
         }
 
         //Collision
-        private void CheckCollision(IWorldObject obj, InputKey move)
+        public void CheckCollision(IWorldObject obj, InputKey move)
         {
             if (obj != null && obj.Block || _player.Position.Col == -1 || _player.Position.Col == _game_world.MaxHeight || _player.Position.Row == -1 || _player.Position.Row == _game_world.MaxWidth)
             {
@@ -156,7 +161,7 @@ namespace GameFramework
 
         }
 
-        private void CheckOnItem(IWorldObject obj, InputKey move)
+        public void CheckOnItem(IWorldObject obj, InputKey move)
         {
 
             //Checks if player is on an object
@@ -196,7 +201,7 @@ namespace GameFramework
 
             }
         }
-        private void CheckOnCreature(IMonster creature)
+        public void CheckOnCreature(IMonster creature)
         {
             if (creature != null && creature.Position.Equals(_player.Position))
             {
@@ -211,7 +216,7 @@ namespace GameFramework
 
             }
         }
-        private bool CheckWin()
+        public bool CheckWin()
         {
             if (_player.HasKey)
             {
@@ -223,7 +228,7 @@ namespace GameFramework
             return true;
         }
         //Takes the user input and creates and action based on the move
-        private bool Fight(IPlayer player, IMonster enemy)
+        public bool Fight(IPlayer player, IMonster enemy)
         {
             do
             {
@@ -259,7 +264,7 @@ namespace GameFramework
             }
             return true;
         }
-        private void AttachObservers(IObserver observer)
+        public void AttachObservers(IObserver observer)
         {
             foreach (var creature in _creatures)
             {

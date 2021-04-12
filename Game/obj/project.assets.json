@@ -71,11 +71,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexa\\Documents\\GitHub\\4 Semester\\C#\\Game\\Game\\MyGame.csproj",
+      "projectUniqueName": "C:\\Users\\alexa\\Documents\\GitHub\\GameFramework\\Game\\MyGame.csproj",
       "projectName": "MyGame",
-      "projectPath": "C:\\Users\\alexa\\Documents\\GitHub\\4 Semester\\C#\\Game\\Game\\MyGame.csproj",
+      "projectPath": "C:\\Users\\alexa\\Documents\\GitHub\\GameFramework\\Game\\MyGame.csproj",
       "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexa\\Documents\\GitHub\\4 Semester\\C#\\Game\\Game\\obj\\",
+      "outputPath": "C:\\Users\\alexa\\Documents\\GitHub\\GameFramework\\Game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,8 +92,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\alexa\\Documents\\GitHub\\4 Semester\\C#\\Game\\GameFramework\\GameFramework.csproj": {
-              "projectPath": "C:\\Users\\alexa\\Documents\\GitHub\\4 Semester\\C#\\Game\\GameFramework\\GameFramework.csproj"
+            "C:\\Users\\alexa\\Documents\\GitHub\\GameFramework\\GameFramework\\GameFramework.csproj": {
+              "projectPath": "C:\\Users\\alexa\\Documents\\GitHub\\GameFramework\\GameFramework\\GameFramework.csproj"
             }
           }
         }
