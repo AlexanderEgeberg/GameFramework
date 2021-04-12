@@ -17,18 +17,21 @@ namespace GameFramework
 {
     public class Game
     {
-        private IWorld _game_world;
-        private IControls _controls;
+        public IWorld _game_world { get; set; }
+        //private IWorld _game_world;
+        public IControls _controls { get; set; }
+        //private IControls _controls;
         private bool _gameRunning;
-        private int _waitTime;
+        public int _waitTime { get; set; }
+        //private int _waitTime;
 
-        private IPlayer _player;
+        public IPlayer _player;
         private static Random rnd = new Random();
 
         private List<IMonster> _creatures;
         private List<IWorldObject> _objects;
-        private StringBuilder gameGraphics = new StringBuilder();
-        private StringBuilder gameConsole = new StringBuilder();
+        public StringBuilder gameGraphics { get; set; }
+        public StringBuilder gameConsole { get; set; }
 
 
         //game constructor with World size
@@ -41,6 +44,8 @@ namespace GameFramework
             _gameRunning = true;
             _controls = controls;
             AttachObservers(deathObserver);
+            gameGraphics = new StringBuilder();
+            gameConsole = new StringBuilder();
         }
 
         //maybe Start() shouldn't be in the framework?
@@ -48,6 +53,7 @@ namespace GameFramework
         //Should just make their own game logic and use the functions?
 
         //starts the game
+        /*
         public void Start()
         {
             Console.CursorVisible = false;
@@ -111,6 +117,7 @@ namespace GameFramework
             Console.WriteLine(_player.HasKey ? "\nYou obtained the key and won!" : "\nYou died and didn't obtain the key so you lost :(");
             TraceWorker.Write(TraceEventType.Stop,3, "Game has ended");
         }
+        */
         public bool GameAction(InputKey move)
         {
             //Player moves based on input direction

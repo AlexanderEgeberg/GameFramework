@@ -7,31 +7,28 @@ namespace GameFramework.Controls
 
     public class Controls : IControls
     {
-        private List<IKey> _keys;
+        public Dictionary<InputKey, IKey> Keys { get; set; }
 
-        public Controls(List<IKey> keys)
+        public Controls(Dictionary<InputKey, IKey> keys)
         {
-            _keys = keys;
+            Keys = keys;
         }
 
         //gets user key pressed in enum
         public InputKey ReadNextKey()
         {
-            var ok = true;
-            while (ok)
+            while (true)
             {
                 ConsoleKeyInfo info = Console.ReadKey();
                 char c = info.KeyChar;
-                foreach (var key in _keys)
+                foreach (var key in Keys)
                 {
-                    if (key.CheckKey(c))
+                    if (key.Value.CheckKey(c))
                     {
-                        ok = false;
-                        return key.ReturnKey();
+                       return key.Value.ReturnKey();
                     }
                 }
             }
-            return InputKey.NONE;
         }
     }
 }

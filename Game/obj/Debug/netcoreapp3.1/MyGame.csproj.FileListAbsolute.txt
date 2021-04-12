@@ -1,0 +1,17 @@
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\obj\Debug\netcoreapp3.1\MyGame.csprojAssemblyReference.cache
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\obj\Debug\netcoreapp3.1\MyGame.AssemblyInfoInputs.cache
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\obj\Debug\netcoreapp3.1\MyGame.AssemblyInfo.cs
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\obj\Debug\netcoreapp3.1\MyGame.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\bin\Debug\netcoreapp3.1\MyGame.exe
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\bin\Debug\netcoreapp3.1\MyGame.deps.json
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\bin\Debug\netcoreapp3.1\MyGame.runtimeconfig.json
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\bin\Debug\netcoreapp3.1\MyGame.runtimeconfig.dev.json
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\bin\Debug\netcoreapp3.1\MyGame.dll
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\bin\Debug\netcoreapp3.1\MyGame.pdb
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\bin\Debug\netcoreapp3.1\GameFramework.dll
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\bin\Debug\netcoreapp3.1\GameFramework.pdb
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\obj\Debug\netcoreapp3.1\MyGame.csproj.CopyComplete
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\obj\Debug\netcoreapp3.1\MyGame.dll
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\obj\Debug\netcoreapp3.1\MyGame.pdb
+C:\Users\alexa\Documents\GitHub\GameFramework\Game\obj\Debug\netcoreapp3.1\MyGame.genruntimeconfig.cache
