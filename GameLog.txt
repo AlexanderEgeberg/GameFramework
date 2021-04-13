@@ -4,15 +4,6 @@ Name Information: 13 : Mage Alex hit LootDecorated Biter for 5
 Name Information: 13 : Zombie Biter hit Mage Alex for 2
 Name Information: 13 : Mage Alex hit LootDecorated Biter for 5
 Name Information: 2 : Zombie Biter was killed
-Name Information: 2 : Zombie Biter was killed
 Name Information: 13 : Mage Alex hit Dragon Dragon for 5
 Name Information: 2 : Dragon Dragon was killed
-Name Information: 2 : Dragon Dragon was killed
 Name Stop: 3 : Game has ended
-Name Start: 1 : Game initial drawing
-Name Information: 10 : Warrior Alex was killed
-Name Information: 13 : Warrior Alex hit LootDecorated Infected for 5
-Name Information: 13 : Zombie Infected hit Warrior Alex for 2
-Name Information: 13 : Warrior Alex hit LootDecorated Infected for 5
-Name Information: 2 : Zombie Infected was killed
-Name Information: 2 : Zombie Infected was killed

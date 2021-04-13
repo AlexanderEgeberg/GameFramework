@@ -24,8 +24,8 @@ namespace MyGame
         {
             //Create deathobserver
             DeathObserver deathObserver = new DeathObserver();
-            //parameters game size, read from XML file - unused switched to array dimensions
-            List<int> configDataInt = XMLConfig.ReadConfiguration();
+            //Keybindings read from config file
+            Dictionary<InputKey, IKey> Keybindings = ControlsConfig.ReadConfiguration();
             //list of monster entities
             List<IMonster> monsters = new List<IMonster>();
             //list of objects in the world
@@ -33,39 +33,15 @@ namespace MyGame
             //your class choice
             PlayerType playerType;
             IPlayer player = null;
-
-
-
-            //SOLID - O: open for extension, but closed for modification
-            //To add more  control keys you create a new Key class and add it to IKey dictionary
-            //Extension through keys list
-            //Assign the key for Left,Right,Forward,Back,Use
-            //If wanna add more keys to the game, create another IKey class
-            //If you wanna reassign a key change the button property
-            //Could be loaded from config file
-            Dictionary<InputKey, IKey> leftKeyboard = new Dictionary<InputKey, IKey>()
-            {
-                {InputKey.LEFT,new LeftKey('a')},
-                {InputKey.RIGHT,new RightKey('d')},
-                {InputKey.FORWARD,new ForwardKey('w')},
-                {InputKey.BACK,new BackKey('s')},
-                {InputKey.USE,new UseKey('q')},
-            };
-
-
             //Create controls
-            IControls leftControls = new Controls(leftKeyboard);
-
+            IControls leftControls = new Controls(Keybindings);
             //Reassign a button
             leftControls.Keys[InputKey.USE].Button = 'e';
-            
-
             //test controls
             //while (true)
             //{
-            //    Console.WriteLine(rightControls.ReadNextKey());
+            //    Console.WriteLine(leftControls.ReadNextKey());
             //}
-
 
             //TODO could make more grids to have more worlds
             //game world, size depending on grid dimensions
@@ -193,11 +169,14 @@ namespace MyGame
                    }
                }
 
+
+               //Start game gennem framework start
+
                //create the visual world with dimensions, creatures,player, and objects
-               World world = new World(grid.GetLength(0), grid.GetLength(1), monsters, player, objects);
+               //World world = new World(grid.GetLength(0), grid.GetLength(1), monsters, player, objects);
 
                // create a game with the world, creatures, palyer, objects, controls, observers and keys
-               Game game = new Game(world, monsters, player, objects, leftControls, deathObserver);
+               //Game game = new Game(world, monsters, player, objects, leftControls, deathObserver);
                //game.Start();
 
                Start();
@@ -215,6 +194,8 @@ namespace MyGame
             
             void Start()
             {
+                //Start game through program.cs
+
                 World world = new World(grid.GetLength(0), grid.GetLength(1), monsters, player, objects);
                 Game game = new Game(world, monsters, player, objects, leftControls, deathObserver);
 

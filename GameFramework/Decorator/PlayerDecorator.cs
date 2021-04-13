@@ -17,6 +17,11 @@ namespace GameFramework.Decorator
             this.Player = aPlayer;
         }
 
+        public IPlayer UndecoratePlayer()
+        {
+            return this.Player;
+        }
+
 
         //Decorator skal bruge samme interface som tidligere object før det blev decorated.
         //IPlayer inheriter ICreature fordi player objekter skal bruge ICreature properties
