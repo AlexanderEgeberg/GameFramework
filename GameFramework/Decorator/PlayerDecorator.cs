@@ -2,6 +2,7 @@
 using System.Runtime.CompilerServices;
 using GameFramework.Entities;
 using GameFramework.Entities.Creatures.Interface;
+using GameFramework.Entities.Objects;
 using GameFramework.Entities.Objects.Interface;
 using GameFramework.Enum;
 using GameFramework.Observer;
@@ -22,12 +23,13 @@ namespace GameFramework.Decorator
             return this.Player;
         }
 
-
+        #region Noter
         //Decorator skal bruge samme interface som tidligere object før det blev decorated.
         //IPlayer inheriter ICreature fordi player objekter skal bruge ICreature properties
         //Af den grund er decoratoren nød til at implementere alle Creature og Player properties & methoder
         //Selvom det nye decorated objekt kun omskriver Hit methoden.
         //Er der en bedre måde at gøre det her er på, eller er man bare nødt til at gøre det på den her måde?
+        #endregion
 
         public bool HasKey { get => Player.HasKey; set => Player.HasKey = value; }
         public abstract IWeapon EquippedWeapon { get; set; }
@@ -55,7 +57,7 @@ namespace GameFramework.Decorator
             Player.Detach(observer);
         }
 
-        public void Eat(int food)
+        public void Eat(Food food)
         {
             Player.Eat(food);
         }

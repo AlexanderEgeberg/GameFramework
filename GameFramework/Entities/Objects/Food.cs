@@ -18,7 +18,7 @@ namespace GameFramework.Entities.Objects
         public override void Use(ref IPlayer creature, List<IWorldObject> objList, Action<IWorldObject> testAction)
         {
 
-            creature.Eat(Value);
+            creature.Eat(this);
             ClearItem(objList);
 
         }

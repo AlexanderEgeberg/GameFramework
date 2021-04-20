@@ -181,6 +181,8 @@ namespace GameFramework
                 //if the player does "USE"
                 if (move == InputKey.USE)
                 {
+
+                    #region Noter
                     //not fan of using if obj is type to check if obj is weapon to use AscendPlayer
                     //Because what if I have objects that aren't weapons or regular worldObjects 
                     //I'd have to do add an extra if check each time.
@@ -188,14 +190,16 @@ namespace GameFramework
                     //if (obj is IWeapon weapon)
                     //{
 
-                        //Decorate player - look into undo a decorating.
-                        //If player already is decorated then remove decorating? And apply new decorating TBD
+                    //Decorate player - look into undo a decorating.
+                    //If player already is decorated then remove decorating? And apply new decorating TBD
 
-                        //Have to use a new function besides .Use since I can't return the new IPlayer using obj.Use()
-                        //weapon.AscendPlayer(ref _player);
-                        //_game_world.Player = _player;
+                    //Have to use a new function besides .Use since I can't return the new IPlayer using obj.Use()
+                    //weapon.AscendPlayer(ref _player);
+                    //_game_world.Player = _player;
                     //}
                     //Fixed
+                    #endregion
+
 
                     //use the object /Decorate object / Eat food
                     obj.Use(ref _player, _objects, GetRandomPosition);

@@ -48,9 +48,9 @@ namespace GameFramework.World
                 sb.Append("|");
 
                 //draw the row
-                PrintRowString(r, sb);
+                CreateRow(r, sb);
 
-                sb.Append($"|");
+                sb.Append("|");
                 sb.AppendLine();
 
             }
@@ -58,18 +58,18 @@ namespace GameFramework.World
             sb.Append(_horizontalLine);
         }
 
-        //Draw row function
-        public void PrintRowString(int r, StringBuilder sb)
+        //DrawObjects row function
+        public void CreateRow(int r, StringBuilder sb)
         {
             //for each Row print the column entity
             for (int c = 0; c < MaxWidth; c++)
             {
                 //draws entity on row + column position
-                PrintColRowChar(r,c, sb);
+                DrawObjects(r,c, sb);
             }
         }
 
-        public void PrintColRowChar(int row, int col, StringBuilder sb)
+        public void DrawObjects(int row, int col, StringBuilder sb)
         {
             //gets current position
             Position p = new Position(row, col);

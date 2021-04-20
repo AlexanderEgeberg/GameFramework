@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using GameFramework.Entities.Creatures.Interface;
 using GameFramework.Entities.Creatures.Observer;
 using GameFramework.Tracer;
